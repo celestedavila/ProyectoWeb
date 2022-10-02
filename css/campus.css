@@ -67,8 +67,9 @@ header ul li a{
 
 nav{
     background-color: rgb(240, 240, 240);
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 nav ul{
@@ -80,6 +81,7 @@ nav ul{
 
 nav ul li{
     flex-grow: 1;
+    padding: 5px;
 }
 
 nav ul li a{
@@ -89,11 +91,63 @@ nav ul li a{
     padding: 2px;
 }
 
+nav ul li a:hover{
+    background-color: grey;
+    color: white
+}
+
 nav ul li a.activo{
-    background-color: black;
+    background-color: gray;
     color: white;
 }
 
-.cursos{
+main{
+    background-color: rgb(240, 240, 240);
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
 
+.materias{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 15px;
+}
+
+.materia{
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 250px;
+}
+
+.materia img{
+    max-width: 100%;
+    object-fit: cover;
+    height: 50%;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.materia h4{
+    margin: 0%;
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 15px;
+}
+
+.materia span{
+    padding-left: 5px;
+}
+
+.materia a{
+    text-decoration: none;
+    color: black;
+}
+
+.materia:hover{
+    box-shadow: 0 0 10px gray;
+    transition: all 0.2s ease;
+    scale: 1.05;
 }
