@@ -107,6 +107,7 @@ main{
     background-color: rgb(240, 240, 240);
     display: grid;
     grid-template-columns: 70% 30%;
+    padding-bottom: 25px;
 }
 
 .materias{
@@ -153,6 +154,7 @@ main{
     box-shadow: 0 0 10px gray;
     transition: all 0.2s ease;
     scale: 1.05;
+    transition-duration: 0.2s, 0.2s;
 }
 
 .notificacion{
@@ -185,10 +187,37 @@ main{
 
 .calculoavanzado{
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 0%;
+}
+
+.clases{
+    margin-left: 5px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 .clases a{
     text-decoration: none;
     color: black;
+}
+
+.clases li{
+    padding-bottom: 5px;
+}
+
+.clase{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    border-radius: 15%;
+}
+.clase a{
+    text-decoration: none;
+    color: black;
+    padding-left: 15px;
+}
+
+.clase img{
+    padding-bottom: 10px;
 }
