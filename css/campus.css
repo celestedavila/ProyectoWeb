@@ -89,6 +89,8 @@ nav ul li a{
     color: black;
     align-items: center;
     padding: 2px;
+    transition-duration: 0.7s;
+
 }
 
 nav ul li a:hover{
@@ -122,6 +124,13 @@ main{
     margin-right: 15px;
     margin-bottom: 15px;
     height: 250px;
+    transition-duration: 0.5s;
+}
+
+.materia:hover{
+    box-shadow: 0 0 10px gray;
+    transition: all 0.2s ease;
+    scale: 1.05;
 }
 
 .materia img{
@@ -150,11 +159,25 @@ main{
     color: black;
 }
 
-.materia:hover{
-    box-shadow: 0 0 10px gray;
-    transition: all 0.2s ease;
-    scale: 1.05;
-    transition-duration: 0.2s, 0.2s;
+.nomaterias{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 400px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.nomaterias h1{
+    margin-left: 15px;
+    text-align: right;
+    padding-top: 5px;
+}
+
+.nomaterias img{
+    width: 30%;
+    align-items: center;
 }
 
 .notificacion{
@@ -185,16 +208,27 @@ main{
     padding-right: 10px;
 }
 
+.notificacion a img{
+    width: 5%;
+    margin-right: 5px;
+    padding-top: 2px;
+}
+
 .calculoavanzado{
     display: grid;
-    grid-template-columns: 40% 0%;
+    grid-template-columns: 30% 70%;
 }
 
 .clases{
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: white;
     border-radius: 15px;
     padding: 15px;
+}
+
+.clases h1{
+    margin: 0%;
 }
 
 .clases a{
@@ -210,14 +244,29 @@ main{
     display: grid;
     grid-template-columns: 1fr;
     background-color: white;
-    border-radius: 15%;
+    border-radius: 15px;
+    margin-right: 10px;
+    padding: 15px;
 }
+
+.clase h1{
+    margin-top: 0%;
+}
+
 .clase a{
     text-decoration: none;
     color: black;
     padding-left: 15px;
+    padding-left: 5px;
 }
 
 .clase img{
     padding-bottom: 10px;
+    width: 60%;
+}
+
+.clase a img{
+    width: 1.5%;
+    padding: 0%;
+    margin-right: 5px;
 }
